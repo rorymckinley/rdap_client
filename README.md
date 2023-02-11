@@ -1,11 +1,16 @@
-rdap_client
+test_friendly_rdap_client
 ========
 
 Async and fast RDAP client and parser for Rust.
 
-[![Documentation](https://docs.rs/rdap_client/badge.svg)](https://docs.rs/rdap_client)
-[![Build Status](https://travis-ci.com/JakubOnderka/rdap_client.svg?branch=master)](https://travis-ci.com/JakubOnderka/rdap_client)
-[![Crates.io](https://img.shields.io/crates/v/rdap_client.svg)](https://crates.io/crates/rdap_client)
+## Important Note
+
+This is essentially a version of the original [rdap_client](https://github.com/JakubOnderka/rdap_client)
+with a few extra sprinkles to make it a bit easier for me to wire up `rdap_client` in
+integration tests.
+
+Ideally, I would have liked to align versions between this crate and `rdap_client`. However, at the
+time of writing, there were changes in the `rdap_client` that had not made it to `crates.io` yet. 
 
 ## Usage
 
@@ -13,14 +18,14 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-rdap_client = "0.2"
+test_friendly_rdap_client = "0.1"
 tokio = "0.2"
 ```
 
 and then you can use it like this:
 
 ```rust
-use rdap_client::Client;
+use test_friendly_rdap_client::Client;
 
 #[tokio::main]
 async fn main() {
