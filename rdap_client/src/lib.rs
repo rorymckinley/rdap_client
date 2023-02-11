@@ -2,7 +2,7 @@
 
 use bytes::BytesMut;
 use ip_network::IpNetwork;
-use rdap_types as parser;
+pub use rdap_types as parser;
 use reqwest::{header, IntoUrl};
 use serde::de::DeserializeOwned;
 use serde::Serialize;
