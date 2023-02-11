@@ -340,7 +340,7 @@ impl Serialize for JCardItem {
 /// https://tools.ietf.org/html/rfc7095
 #[skip_serializing_none]
 #[derive(Serialize, Deserialize, Debug)]
-pub struct JCard(JCardType, Vec<JCardItem>);
+pub struct JCard(pub JCardType, pub Vec<JCardItem>);
 
 impl JCard {
     pub fn typ(&self) -> JCardType {
