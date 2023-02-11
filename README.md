@@ -10,7 +10,8 @@ with a few extra sprinkles to make it a bit easier for me to wire up `rdap_clien
 integration tests.
 
 Ideally, I would have liked to align versions between this crate and `rdap_client`. However, at the
-time of writing, there were changes in the `rdap_client` that had not made it to `crates.io` yet. 
+time of writing, there were changes in the `rdap_client` that had not made it to
+[crates.io](https://crates.io/crates/rdap_client) yet.
 
 ## Usage
 
