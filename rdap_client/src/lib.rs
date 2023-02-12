@@ -12,6 +12,7 @@ use std::time::Duration;
 use url::Url;
 
 pub mod bootstrap;
+pub mod rdap_types;
 
 /// Query value for search domain request.
 #[derive(Debug)]
