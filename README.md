@@ -9,9 +9,9 @@ This is essentially a version of the original [rdap_client](https://github.com/J
 with a few extra sprinkles to make it a bit easier for me to wire up `rdap_client` in
 integration tests.
 
-Ideally, I would have liked to align versions between this crate and `rdap_client`. However, at the
-time of writing, there were changes in the `rdap_client` that had not made it to
-[crates.io](https://crates.io/crates/rdap_client) yet.
+I initially attempted to keep the code as close to upstream as possible but,  unfortunately,
+crates.io either did not like the way the Cargo.toml was set up or (more likely) I was doing
+something stupid.
 
 ## Usage
 
